@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinesh guru Food Delivery Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rinesh guru Food Delivery Service</h1>
+        <p>Delicious meals delivered to your door!</p>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>SPECIAL OFFER @99</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/pizza.jpg" alt="Pizza" class="menu-image">
+                    <h3>Pizza</h3>
+                    <p>Delicious cheese pizza with fresh toppings.</p>
+                    <span>₹99.00</span>
+                    <button onclick="addToOrder('Pizza', 99)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/burger.jpg" alt="Burger" class="menu-image">
+                    <h3>Burger</h3>
+                    <p>Juicy beef burger with lettuce and tomato.</p>
+                    <span>₹99.00</span>
+                    <button onclick="addToOrder('Burger', 99)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pasta.jpg" alt="Pasta" class="menu-image">
+                    <h3>Pasta</h3>
+                    <p>Creamy Alfredo pasta with garlic bread.</p>
+                    <span>₹99.00</span>
+                    <button onclick="addToOrder('Pasta', 99)">Order</button>
+                </div>   
+            </div>
+            <h2>BEST BRUNCH</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/salad.jpg" alt="Salad" class="menu-image">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce with Caesar dressing.</p>
+                    <span>₹69.00</span>
+                    <button onclick="addToOrder('Caesar Salad', 69)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Briyani.jpg" alt="Briyani" class="menu-image">
+                    <h3>Briyani</h3>
+                    <p>Fresh Chiken Briyani is with hot spicy.</p>
+                    <span>₹120.00</span>
+                    <button onclick="addToOrder('Briyani', 120)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Dosa.jpg" alt="Dosa" class="menu-image">
+                    <h3>Dosa</h3>
+                    <p>Crispy and tasty Dosa are very best for morning breakfast.</p>
+                    <span>₹50.00</span>
+                    <button onclick="addToOrder('Dosa', 50)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dessert.jpg" alt="Dessert" class="menu-image">
+                    <h3>Cake</h3>
+                    <p>Rich chocolate cake with creamy frosting and many other Flavours.</p>
+                    <span>₹30.00</span>
+                    <button onclick="addToOrder('Chocolate Cake', 30)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/icecream.jpg" alt="Ice Cream" class="menu-image">
+                    <h3>Ice Cream</h3>
+                    <p>Delicious ice cream in various flavors.</p>
+                    <span>₹25.00</span>
+                    <button onclick="addToOrder('Ice Cream', 25)">Order</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Porota.jpg" alt="Porota" class="menu-image">
+                    <h3>Porota</h3>
+                    <p>THE Porota is the best in the lunch to take.</p>
+                    <span>₹20.00</span>
+                    <button onclick="addToOrder('Porota', 20)">Order</button>
+                </div>
+            </div>
+        </section>
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="order-list"></ul>
+            <div id="total-container">
+                <p id="total-price">Total: ₹0.00</p>
+                <button id="checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
